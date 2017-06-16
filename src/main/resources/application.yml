@@ -1,0 +1,13 @@
+server:
+  port: 8090
+  address: 192.168.1.107
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.107:3306/mybatis
+    username: zls
+    password: zlspwd
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.spring.mvc.been
