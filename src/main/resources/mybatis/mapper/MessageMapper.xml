@@ -3,7 +3,7 @@
 <mapper namespace="com.spring.mvc.mapper.MessageMapper">
     <resultMap id="BaseResultMap" type="com.spring.mvc.been.Message">
         <id column="id" property="id" jdbcType="BIGINT"/>
-        <result column="title" property="title" javaType="VARCHAR"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
         <result column="content" property="content" jdbcType="VARCHAR"/>
         <result column="datetime" property="datetime" javaType="LONG"/>
     </resultMap>
